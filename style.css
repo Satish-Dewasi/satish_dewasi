@@ -10,21 +10,46 @@ html{
     font-size: 62.5%;
 }
 
-body{
+/* body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     background-color: #e5f0ff !important;
-    /* gap: 3rem; */
+    /* gap: 3rem; 
     
+} */
+
+body.light-theme {
+    /* background-color: #ffffff; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #e5f0ff !important;
+    color:#121212 !important;
 }
+
+body.dark-theme {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #121212 !important;
+    color: #e5f0ff!important;
+}
+
+
+
+
+
+
+
+
 
 nav{
     width: 100%;
     height: 10vh;
     /* background-color: lightgrey; */
-    background-color: #e5f0ff;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -80,10 +105,35 @@ nav{
     justify-content: space-around;
 }
 
+.toggle input[type="checkbox"] {
+    display: none;
+}
+
+.toggle label {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: left 0.3s;
+}
+
+.toggle input:checked+label {
+    left: calc(100% - 24px);
+    background-color: #fff;
+}
 
 
+
+@media screen and (max-width:600px) {
+
+    nav {
+        height: 6vh;
+    }
+}
 
 @media screen and (max-width:850px){
+    
 
     .tabs{
         display: none;
@@ -121,6 +171,11 @@ nav{
     /* background-image: linear-gradient(to right top, #e5f0ff, #0998E5); */
 }
 
+.hero-mobile{
+    width: 100%;
+    height: 90vh;
+    display: none;
+}
 
 .container{
     position: absolute;
@@ -145,14 +200,26 @@ nav{
 
 }
 
-.button{
+.buton {
     width: 80%;
     height: 20vh;
     /* border: 1px solid black; */
+    font-size: 2rem !important;
     display: flex;
     padding-top: 3%;
     gap: 10%;
 }
+
+.buton div {
+    font-size: 2rem !important;
+    background-color: #0066FF;
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+    padding-inline: 3%;
+}
+
+
 
 .text-1{
     font-size: 3rem;
@@ -162,13 +229,13 @@ nav{
 
 .text-2 {
     font-size: 10rem;
-    font-family: Rem;
+    font-family: Rubik;
     font-weight: 1000;
 }
 
 .text-3 {
     font-size: 5rem;
-    font-family: Roboto;
+    font-family: Rem;
     font-weight: 600;
 }
 
@@ -185,3 +252,15 @@ nav{
     }
 }
 
+@media screen and (max-width:600px) {
+    .hero {
+        display: none;
+    }
+
+    .hero-mobile{
+        display: block;
+        background-image: url(./assets/mobile-bg-3.svg);
+        background-repeat: no-repeat;
+
+    }
+}

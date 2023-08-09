@@ -227,13 +227,14 @@ nav{
     gap: 10%;
 }
 
-.buton div {
+
+.buton  div {
     font-size: 2rem !important;
     background-color: #0066FF;
     display: flex;
     align-items: center;
     gap: 1rem; 
-    padding-inline: 3%;
+    padding-inline: 2%; 
 }
 
 

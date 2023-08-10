@@ -287,6 +287,15 @@ nav{
 
 /*About*/
 
+.about-top{
+    width: 100%;
+    text-align: center;
+    font-size: 3.1rem;
+    /* text-decoration: underline; */
+    font-family: Rubik;
+    font-weight: 600;
+}
+
 .about{
     position: relative;
     width: 100%;
@@ -408,3 +417,137 @@ nav{
    }
 }
 
+
+
+/*Project*/
+
+.project{
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-heading{
+    width: 90%;
+    height: 7vh;
+    text-align: center;
+    font-size: 3.1rem;
+    /* text-decoration: underline; */
+    font-family: Rubik;
+    font-weight: 600;
+}
+.project-desc {
+    width: 90%;
+    text-align: center;
+    height: 7vh;
+    font-size: 2rem;
+    font-family: Roboto;
+    /* border: 1px solid; */
+}
+
+.project-cards{
+
+    width: 90%;
+    height: 80vh;
+    /* border: 1px solid green; */
+    
+}
+
+.card-row{
+    margin-bottom: 3%;
+    width: 100%;
+    height: auto;
+    /* border: 2px solid; */
+    display: flex;
+    flex-wrap:wrap;
+    row-gap: 2.5rem !important;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-row a{
+    text-decoration: none !important;
+    color: inherit;
+
+}
+
+.card-row a:hover{
+    color: inherit !important;
+}
+
+.caard{
+    height: 52rem;
+    width: 32rem;
+    background-color: #ADD8E6;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    color: #121212 !important;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;}
+
+.card-img{
+    width: 100%;
+    height: 50%;
+    background-color: #ADD8E6;
+}
+
+.card-img img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.card-desc{
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+}
+
+.card-heading{
+    font-size: 2.5rem;
+    font-family: Rem;
+}
+
+.project-intro{
+    font-size: 1.8rem;
+    font-family: Roboto;
+}
+
+.tech{
+    margin-top: 3%;
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+.tech button{
+   width: 6rem;
+   height: 2rem;
+   background-color: #0066FF;
+   font-size: 1rem;
+   font-weight: 600;
+   color: inherit;
+   border: none;
+   border-radius: 3px;
+}
+
+.last-card{
+    display: flex;
+    font-size: 3rem;
+    font-family: Borel !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ADD8E6;
+
+}

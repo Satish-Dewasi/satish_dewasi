@@ -180,7 +180,7 @@ nav{
 
 .hero{
     width: 100%;
-    height: min-content;
+    height: 90vh;
 
     /* border: 1px solid black;  */
     /* clip-path: polygon(100% 0, 50% 0, 100% 90%); */
@@ -279,6 +279,132 @@ nav{
         display: block;
         background-image: url(./assets/mobile-bg-3.svg);
         background-repeat: no-repeat;
+        /* border: 1px solid black; */
 
     }
 }
+
+
+/*About*/
+
+.about{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about-items-1{
+    width: 40%;
+    height: 70vh;
+    /* border: 1px solid green; */
+}
+
+.about-items-2{
+    width: 40%;
+    height: 70vh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 2rem;
+    /* padding-right: 2%; */
+    
+}
+
+.about-heading{
+    font-size: 3rem;
+    font-family: Roboto;
+}
+
+.address{
+    font-size: 2rem;
+    font-family: Rem;
+}
+
+.desctiption{
+    font-size: 2rem;
+    font-family: Rubik;
+}
+
+.about-btn{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 5%;
+        padding-inline: 2%;
+}
+
+.about-btn div{
+        font-size: 2rem !important;
+        background-color: #0066FF;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding-inline: 2%;
+}
+
+@media screen and (max-width:800px) {
+   .about{
+    justify-content: space-between;
+    padding-right: 0%;
+   }
+}
+
+
+@media screen and (max-width:1260px) {
+    
+    .about-heading {
+            font-size: 2.7rem;
+    }
+
+    .address {
+        font-size: 1.7rem;
+    }
+
+     .desctiption {
+        font-size: 1.7rem;
+     }
+}
+
+
+/* @media screen and (max-width:1260px) {
+
+    .about-heading {
+        font-size: 2.2rem;
+    }
+
+    .address {
+        font-size: 1.2rem;
+    }
+
+    .address {
+        font-size: 1.2rem;
+    }
+}
+ */
+
+@media screen and (max-width:800px) {
+   .about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   }
+
+   .about-items-1 {
+       width: 80%;
+       height: auto;
+   }
+
+   .about-items-2 {
+       width: 80%;
+       height: auto;
+   }
+}
+

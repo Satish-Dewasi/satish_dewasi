@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!-- saved from url=(0154)https://webeditor.acciojob.com/?question=ad352fb6-3d8b-46a9-ab4e-23dde03aa933&endpoint=https://api.acciojob.com&platform=unrestricted&type=course&contest= -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.ͼ1.cm-editor.cm-focused {outline: 1px dotted #212121;}
+.ͼ1.cm-editor {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
+.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0;}
+.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
+.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; min-height: 100%; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; padding: 4px 0; outline: none;}
+.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
+.ͼ2 .cm-content {caret-color: black;}
+.ͼ3 .cm-content {caret-color: white;}
+.ͼ1 .cm-line {display: block; padding: 0 2px 0 6px;}
+.ͼ1 .cm-layer > * {position: absolute;}
+.ͼ1 .cm-layer {contain: size style;}
+.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
+.ͼ3 .cm-selectionBackground {background: #222;}
+.ͼ2.cm-focused .cm-selectionBackground {background: #d7d4f0;}
+.ͼ3.cm-focused .cm-selectionBackground {background: #233;}
+.ͼ1 .cm-cursorLayer {pointer-events: none;}
+.ͼ1.cm-focused .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
+@keyframes cm-blink {50% {opacity: 0;}}
+@keyframes cm-blink2 {50% {opacity: 0;}}
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
+.ͼ1 .cm-cursor {display: none;}
+.ͼ3 .cm-cursor {border-left-color: #444;}
+.ͼ1.cm-focused .cm-cursor {display: block;}
+.ͼ2 .cm-activeLine {background-color: #cceeff44;}
+.ͼ3 .cm-activeLine {background-color: #99eeff33;}
+.ͼ2 .cm-specialChar {color: red;}
+.ͼ3 .cm-specialChar {color: #f78;}
+.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; left: 0; z-index: 200;}
+.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border-right: 1px solid #ddd;}
+.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
+.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
+.ͼ1 .cm-gutterElement {box-sizing: border-box;}
+.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
+.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
+.ͼ3 .cm-activeLineGutter {background-color: #222227;}
+.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0;}
+.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
+.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
+.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
+.ͼ3 .cm-panels {background-color: #333338; color: white;}
+.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
+.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
+.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top;}
+.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
+.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
+.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
+.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
+.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
+.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
+.ͼ2 .cm-textfield {background-color: white;}
+.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
+.ͼ1 .cm-selectionMatch {background-color: #99ff7780;}
+.ͼ1 .cm-searchMatch .cm-selectionMatch {background-color: transparent;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > li {overflow-x: hidden; text-overflow: ellipsis; cursor: pointer; padding: 1px 3px; line-height: 1.2;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul {font-family: monospace; white-space: nowrap; overflow: hidden auto; max-width: 700px; max-width: min(700px, 95vw); min-width: 250px; max-height: 10em; height: 100%; list-style: none; margin: 0; padding: 0;}
+.ͼ2 .cm-tooltip-autocomplete ul li[aria-selected] {background: #17c; color: white;}
+.ͼ2 .cm-tooltip-autocomplete-disabled ul li[aria-selected] {background: #777;}
+.ͼ3 .cm-tooltip-autocomplete ul li[aria-selected] {background: #347; color: white;}
+.ͼ3 .cm-tooltip-autocomplete-disabled ul li[aria-selected] {background: #444;}
+.ͼ1 .cm-completionListIncompleteTop:before, .ͼ1 .cm-completionListIncompleteBottom:after {content: "···"; opacity: 0.5; display: block; text-align: center;}
+.ͼ1 .cm-tooltip.cm-completionInfo {position: absolute; padding: 3px 9px; width: max-content; max-width: 400px; box-sizing: border-box;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left {right: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right {left: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left-narrow {right: 30px;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right-narrow {left: 30px;}
+.ͼ2 .cm-snippetField {background-color: #00000022;}
+.ͼ3 .cm-snippetField {background-color: #ffffff22;}
+.ͼ1 .cm-snippetFieldPosition {vertical-align: text-top; width: 0; height: 1.15em; display: inline-block; margin: 0 -0.7px -.7em; border-left: 1.4px dotted #888;}
+.ͼ1 .cm-completionMatchedText {text-decoration: underline;}
+.ͼ1 .cm-completionDetail {margin-left: 0.5em; font-style: italic;}
+.ͼ1 .cm-completionIcon {font-size: 90%; width: .8em; display: inline-block; text-align: center; padding-right: .6em; opacity: 0.6; box-sizing: content-box;}
+.ͼ1 .cm-completionIcon-function:after, .ͼ1 .cm-completionIcon-method:after {content: 'ƒ';}
+.ͼ1 .cm-completionIcon-class:after {content: '○';}
+.ͼ1 .cm-completionIcon-interface:after {content: '◌';}
+.ͼ1 .cm-completionIcon-variable:after {content: '𝑥';}
+.ͼ1 .cm-completionIcon-constant:after {content: '𝐶';}
+.ͼ1 .cm-completionIcon-type:after {content: '𝑡';}
+.ͼ1 .cm-completionIcon-enum:after {content: '∪';}
+.ͼ1 .cm-completionIcon-property:after {content: '□';}
+.ͼ1 .cm-completionIcon-keyword:after {content: '🔑︎';}
+.ͼ1 .cm-completionIcon-namespace:after {content: '▢';}
+.ͼ1 .cm-completionIcon-text:after {content: 'abc'; font-size: 50%; vertical-align: middle;}
+.ͼ1 .cm-tooltip {z-index: 100; box-sizing: border-box;}
+.ͼ2 .cm-tooltip {border: 1px solid #bbb; background-color: #f5f5f5;}
+.ͼ2 .cm-tooltip-section:not(:first-child) {border-top: 1px solid #bbb;}
+.ͼ3 .cm-tooltip {background-color: #333338; color: white;}
+.ͼ1 .cm-tooltip-arrow:before, .ͼ1 .cm-tooltip-arrow:after {content: ''; position: absolute; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:before {border-top: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:after {border-top: 7px solid #f5f5f5; bottom: 1px;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow {bottom: -7px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:before {border-bottom: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:after {border-bottom: 7px solid #f5f5f5; top: 1px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow {top: -7px;}
+.ͼ1 .cm-tooltip-arrow {height: 7px; width: 14px; position: absolute; z-index: -1; overflow: hidden;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:before {border-top-color: #333338; border-bottom-color: #333338;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:after {border-top-color: transparent; border-bottom-color: transparent;}
+.ͼ1.cm-focused .cm-matchingBracket {background-color: #328c8252;}
+.ͼ1.cm-focused .cm-nonmatchingBracket {background-color: #bb555544;}
+.ͼ1 .cm-foldPlaceholder {background-color: #eee; border: 1px solid #ddd; color: #888; border-radius: .2em; margin: 0 1px; padding: 0 1px; cursor: pointer;}
+.ͼ1 .cm-foldGutter span {padding: 0 1px; cursor: pointer;}
+.ͼ2c {color: #A2A9B5;}
+.ͼ2d {color: #B78FBA;}
+.ͼ2e {color: #5AB0B0;}
+.ͼ2f {color: #99C592;}
+.ͼ2g {color: #f47954;}
+.ͼ2h {color: #629ccd;}
+.ͼ2i {color: #E35F63;}
+.ͼ2j {color: #fbac52;}
+.ͼ2k {color: #E35F63;}
+.ͼ2b {background-color: #303841; color: #FFFFFF;}
+.ͼ2b .cm-gutters {background-color: #303841; color: #FFFFFF70;}
+.ͼ2b .cm-content {caret-color: #FBAC52;}
+.ͼ2b .cm-cursor, .ͼ2b .cm-dropCursor {border-left-color: #FBAC52;}
+.ͼ2b .cm-activeLine {background-color: #00000059;}
+.ͼ2b .cm-activeLineGutter {background-color: #00000059;}
+.ͼ2b.cm-focused .cm-selectionBackground, .ͼ2b .cm-selectionLayer .cm-selectionBackground, .ͼ2b .cm-content ::selection {background-color: #4C5964;}
+.ͼ2b .cm-selectionMatch {background-color: #3A546E;}
+.ͼj9 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼj7 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼj5 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼj3 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼj1 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼiz {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼix {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼiv {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼit {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼir {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼip {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼin {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼil {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼij {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼih {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼif {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼid {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼib {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼi9 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼi7 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼi5 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼi3 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼi1 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhz {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhx {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhv {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼht {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhr {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhp {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhn {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhl {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhj {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhh {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhf {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhd {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhb {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼh9 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼh7 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼh5 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼh3 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼh1 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgz {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgx {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgv {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgt {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgr {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgp {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgn {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgl {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgj {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgh {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgf {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgd {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgb {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼg9 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼg7 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼg5 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼg3 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼg1 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfz {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfx {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfv {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼft {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfr {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfp {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfn {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfl {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfj {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfh {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼff {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfd {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfb {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼf9 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼf7 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼf5 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼf3 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼf1 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼez {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼex {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼev {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼet {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼer {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼep {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼen {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼel {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼej {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼeh {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼef {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼed {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼeb {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼe9 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼe7 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼe5 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼe3 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼe1 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdz {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdx {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdv {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdt {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdr {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdp {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdn {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdl {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdj {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdh {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdf {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdd {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdb {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼd9 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼd7 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼd5 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼd3 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼd1 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcz {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcx {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcv {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼct {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcr {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcp {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcn {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcl {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcj {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼch {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcf {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcd {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcb {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼc9 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼc7 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼc5 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼc3 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼc1 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbz {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbx {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbv {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbt {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbr {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbp {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbn {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbl {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbj {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbh {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbf {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbd {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbb {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼb9 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼb7 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼb5 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼb3 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼb1 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼaz {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼax {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼav {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼat {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼar {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼap {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼan {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼal {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼaj {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼah {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼaf {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼad {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼab {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼa9 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼa7 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼa5 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼa3 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼa1 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9z {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9x {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9v {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9t {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9r {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9p {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9n {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9l {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9j {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9h {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9f {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9d {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9b {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ99 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ97 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ95 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ93 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ91 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8z {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8x {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8v {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8t {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8r {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8p {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8n {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8l {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8j {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8h {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8f {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8d {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8b {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ89 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ87 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ85 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ83 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ81 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7z {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7x {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7v {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7t {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7r {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7p {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7n {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7l {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7j {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7h {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7f {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7d {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7b {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ79 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ77 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ75 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ73 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ71 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6z {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6x {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6v {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6t {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6r {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6p {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6n {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6l {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6j {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6h {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6f {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6d {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6b {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ69 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ67 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ65 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ63 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ61 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5z {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5x {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5v {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5t {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5r {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5p {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5n {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5l {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5j {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5h {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ59 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ57 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ55 {height: 100%; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5 {color: #7a757a;}
+.ͼ6 {text-decoration: underline;}
+.ͼ7 {text-decoration: underline; font-weight: bold;}
+.ͼ8 {font-style: italic;}
+.ͼ9 {font-weight: bold;}
+.ͼa {text-decoration: line-through;}
+.ͼb {color: #708;}
+.ͼc {color: #219;}
+.ͼd {color: #164;}
+.ͼe {color: #a11;}
+.ͼf {color: #e40;}
+.ͼg {color: #00f;}
+.ͼh {color: #30a;}
+.ͼi {color: #085;}
+.ͼj {color: #167;}
+.ͼk {color: #256;}
+.ͼl {color: #00c;}
+.ͼm {color: #940;}
+.ͼn {color: #f00;}
+.ͼ4 .cm-line ::selection {background-color: transparent !important;}
+.ͼ4 .cm-line::selection {background-color: transparent !important;}
+.ͼ4 .cm-line {caret-color: transparent !important;}
+</style><link rel="icon" href="https://webeditor.acciojob.com/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Web site created using create-react-app"><link rel="apple-touch-icon" href="https://webeditor.acciojob.com/logo192.png"><link rel="manifest" href="https://webeditor.acciojob.com/manifest.json"><title>React App</title><link rel="stylesheet" href="./github-markdown-light.min.css" integrity="sha512-zb2pp+R+czM7GAemdSUQt6jFmr3qCo6ikvBgVU6F5GvwEDR0C2sefFiPEJ9QUpmAKdD5EqDUdNRtbOYnbF/eyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"><script defer="defer" src="./main.b2e0d9b0.js.download"></script><link href="./main.e3b66349.css" rel="stylesheet"><style data-styled="active" data-styled-version="5.3.6"></style><style data-emotion="css" data-s=""></style></head><body class=""><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="App"><div class="sc-gswNZR ggHpfV CodeEditor "><div id="idle" class="idle "><div class="reflex-container-top vertical reflex-container"><div class="right-pane vertical reflex-element" style="flex: 0.5 1 0%;"><div id="editorPanel"><div class="editor-box-container" id="editor-box-container"><div class="editor-box-panel horizontal reflex-container"><div class="editor horizontal reflex-element" style="flex: 0.745955 1 0%;"><div class="code-editor-identity"><p>HTML</p></div><div class="code-editor" id="code-editor" style="font-size: 16px;"><div class="cm-theme main-editor"><div class="cm-editor ͼ1 ͼ3 ͼ4 ͼj5 ͼ2b"><div aria-live="polite" style="position: absolute; top: -10000px;"><div>Selection deleted</div></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 1821.01px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">99</div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 22.3828px;">2</div><div class="cm-gutterElement" style="height: 22.3828px;">3</div><div class="cm-gutterElement" style="height: 22.3828px;">4</div><div class="cm-gutterElement" style="height: 22.3828px;">5</div><div class="cm-gutterElement" style="height: 22.3828px;">6</div><div class="cm-gutterElement" style="height: 22.3828px;">7</div><div class="cm-gutterElement" style="height: 22.3828px;">8</div><div class="cm-gutterElement" style="height: 22.3828px;">9</div><div class="cm-gutterElement" style="height: 22.3828px;">10</div><div class="cm-gutterElement" style="height: 22.3828px;">11</div><div class="cm-gutterElement" style="height: 22.3828px;">12</div><div class="cm-gutterElement" style="height: 22.3828px;">13</div><div class="cm-gutterElement" style="height: 22.3828px;">14</div><div class="cm-gutterElement" style="height: 22.3828px;">15</div><div class="cm-gutterElement" style="height: 22.3828px;">16</div><div class="cm-gutterElement" style="height: 22.3828px;">17</div><div class="cm-gutterElement" style="height: 22.3828px;">18</div><div class="cm-gutterElement" style="height: 22.3828px;">19</div><div class="cm-gutterElement" style="height: 22.3828px;">20</div><div class="cm-gutterElement" style="height: 22.3828px;">21</div><div class="cm-gutterElement" style="height: 22.3828px;">22</div><div class="cm-gutterElement" style="height: 22.3828px;">23</div><div class="cm-gutterElement" style="height: 22.3828px;">24</div><div class="cm-gutterElement" style="height: 22.3828px;">25</div><div class="cm-gutterElement" style="height: 22.3828px;">26</div><div class="cm-gutterElement" style="height: 22.3828px;">27</div><div class="cm-gutterElement" style="height: 22.3828px;">28</div><div class="cm-gutterElement" style="height: 22.3828px;">29</div><div class="cm-gutterElement" style="height: 22.3828px;">30</div><div class="cm-gutterElement" style="height: 22.3828px;">31</div><div class="cm-gutterElement" style="height: 22.3828px;">32</div><div class="cm-gutterElement" style="height: 22.3828px;">33</div><div class="cm-gutterElement" style="height: 22.3828px;">34</div><div class="cm-gutterElement" style="height: 22.3828px;">35</div><div class="cm-gutterElement" style="height: 22.3828px;">36</div><div class="cm-gutterElement" style="height: 22.3828px;">37</div><div class="cm-gutterElement" style="height: 22.3828px;">38</div><div class="cm-gutterElement" style="height: 22.3828px;">39</div><div class="cm-gutterElement" style="height: 22.3828px;">40</div><div class="cm-gutterElement" style="height: 22.3828px;">41</div><div class="cm-gutterElement" style="height: 22.3828px;">42</div><div class="cm-gutterElement" style="height: 22.3828px;">43</div><div class="cm-gutterElement" style="height: 22.3828px;">44</div><div class="cm-gutterElement" style="height: 22.3828px;">45</div><div class="cm-gutterElement" style="height: 22.3828px;">46</div><div class="cm-gutterElement" style="height: 22.3828px;">47</div><div class="cm-gutterElement" style="height: 22.3828px;">48</div><div class="cm-gutterElement" style="height: 22.3828px;">49</div><div class="cm-gutterElement" style="height: 22.3828px;">50</div><div class="cm-gutterElement" style="height: 22.3828px;">51</div><div class="cm-gutterElement" style="height: 22.3828px;">52</div><div class="cm-gutterElement" style="height: 22.3828px;">53</div><div class="cm-gutterElement" style="height: 22.3828px;">54</div><div class="cm-gutterElement" style="height: 22.3828px;">55</div><div class="cm-gutterElement" style="height: 22.3828px;">56</div><div class="cm-gutterElement" style="height: 22.3828px;">57</div><div class="cm-gutterElement" style="height: 22.3828px;">58</div><div class="cm-gutterElement" style="height: 22.3828px;">59</div><div class="cm-gutterElement" style="height: 22.3828px;">60</div><div class="cm-gutterElement" style="height: 22.3828px;">61</div><div class="cm-gutterElement" style="height: 22.3828px;">62</div><div class="cm-gutterElement" style="height: 22.3828px;">63</div><div class="cm-gutterElement" style="height: 22.3828px;">64</div><div class="cm-gutterElement" style="height: 22.3828px;">65</div><div class="cm-gutterElement" style="height: 22.3828px;">66</div><div class="cm-gutterElement" style="height: 22.3828px;">67</div><div class="cm-gutterElement" style="height: 22.3828px;">68</div><div class="cm-gutterElement" style="height: 22.3828px;">69</div><div class="cm-gutterElement" style="height: 22.3828px;">70</div><div class="cm-gutterElement" style="height: 22.3828px;">71</div><div class="cm-gutterElement" style="height: 22.3828px;">72</div><div class="cm-gutterElement" style="height: 22.3828px;">73</div><div class="cm-gutterElement" style="height: 22.3828px;">74</div><div class="cm-gutterElement" style="height: 22.3828px;">75</div><div class="cm-gutterElement" style="height: 22.3828px;">76</div><div class="cm-gutterElement" style="height: 22.3828px;">77</div><div class="cm-gutterElement" style="height: 22.3828px;">78</div><div class="cm-gutterElement" style="height: 22.3828px;">79</div><div class="cm-gutterElement" style="height: 22.3828px;">80</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 22.3828px;">81</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 26.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 22.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 22.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 44.7656px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 89.5312px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 111.914px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 44.7656px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 67.1484px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 67.1484px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 156.68px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 44.7656px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 134.297px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 22.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 44.7656px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 67.1484px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 22.3828px; margin-top: 246.211px;"></div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" class="cm-content" style="tab-size: 4;" role="textbox" aria-multiline="true" data-language="html" aria-autocomplete="list"><div class="cm-line"><span class="ͼ2c">&lt;!DOCTYPE html&gt;</span></div><div class="cm-line">&lt;<span class="ͼ2i">html</span>&gt;</div><div class="cm-line">&lt;<span class="ͼ2i">head</span>&gt;</div><div class="cm-line">&lt;/<span class="ͼ2i">head</span>&gt;</div><div class="cm-line">&lt;<span class="ͼ2i">body</span>&gt;</div><div class="cm-line"><br></div><div class="cm-line">&lt;<span class="ͼ2i">table</span>&gt;</div><div class="cm-line">  &lt;<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">      &lt;<span class="ͼ2i">table</span>&gt;</div><div class="cm-line">        &lt;<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">th</span> <span class="ͼ2d">colspan</span><span class="ͼ2g">=</span><span class="ͼ2f">"2"</span> &gt;Nested Table 1&lt;/<span class="ͼ2i">th</span>&gt;</div><div class="cm-line">        &lt;/<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">        &lt;<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">td</span>&gt;Column 1&lt;/<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">td</span>&gt;Column 2&lt;/<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">        &lt;/<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line"><br></div><div class="cm-line">		 &lt;<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">td</span>&gt;abc&lt;/<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">td</span>&gt;def&lt;/<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">        &lt;/<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">      &lt;/<span class="ͼ2i">table</span>&gt;</div><div class="cm-line">    &lt;/<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">		 &lt;<span class="ͼ2i">table</span>&gt;</div><div class="cm-line">        &lt;<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">th</span> <span class="ͼ2d">colspan</span><span class="ͼ2g">=</span><span class="ͼ2f">"2"</span>&gt;Nested Table 4&lt;/<span class="ͼ2i">th</span>&gt;</div><div class="cm-line">        &lt;/<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">        &lt;<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">th</span>&gt;Column 1&lt;/<span class="ͼ2i">th</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">th</span>&gt;Column 2&lt;/<span class="ͼ2i">th</span>&gt;</div><div class="cm-line">        &lt;/<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">        &lt;<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">td</span>&gt;List item 1&lt;/<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">td</span>&gt;List item 2&lt;/<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">        &lt;/<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">        &lt;<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">td</span>&gt;List item 3&lt;/<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">td</span>&gt;Content&lt;/<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">        &lt;/<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">      &lt;/<span class="ͼ2i">table</span>&gt;</div><div class="cm-line">     </div><div class="cm-line">    &lt;/<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">  &lt;/<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">  &lt;<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">    &lt;<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">      &lt;<span class="ͼ2i">table</span>&gt;</div><div class="cm-line">        &lt;<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">th</span> <span class="ͼ2d">colspan</span><span class="ͼ2g">=</span><span class="ͼ2f">"2"</span>&gt;Nested Table 3&lt;/<span class="ͼ2i">th</span>&gt;</div><div class="cm-line">        &lt;/<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">        &lt;<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">th</span>&gt; &lt;<span class="ͼ2i">a</span>&gt; Nested Table&lt;/<span class="ͼ2i">a</span>&gt; &lt;/<span class="ͼ2i">th</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">th</span>&gt;Column 2&lt;/<span class="ͼ2i">th</span>&gt;</div><div class="cm-line">        &lt;/<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">      &lt;/<span class="ͼ2i">table</span>&gt;</div><div class="cm-line">    &lt;/<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">	     </div><div class="cm-line">    &lt;<span class="ͼ2i">td</span>&gt;</div><div class="cm-line"><br></div><div class="cm-line">		 &lt;<span class="ͼ2i">table</span>&gt;</div><div class="cm-line">        &lt;<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">th</span> <span class="ͼ2d">colspan</span><span class="ͼ2g">=</span><span class="ͼ2f">"2"</span>&gt;Nested Table 2&lt;/<span class="ͼ2i">th</span>&gt;</div><div class="cm-line">        &lt;/<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">        &lt;<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">th</span>&gt;Column 1&lt;/<span class="ͼ2i">th</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">th</span>&gt;Column 2&lt;/<span class="ͼ2i">th</span>&gt;</div><div class="cm-line">        &lt;/<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">        &lt;<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">td</span> <span class="ͼ2d">class</span><span class="ͼ2g">=</span><span class="ͼ2f">"black-cell"</span>&gt;HTML&lt;/<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">          &lt;<span class="ͼ2i">td</span>&gt;Content&lt;/<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">        &lt;/<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">      &lt;/<span class="ͼ2i">table</span>&gt;</div><div class="cm-line">     </div><div class="cm-line">    &lt;/<span class="ͼ2i">td</span>&gt;</div><div class="cm-line">  &lt;/<span class="ͼ2i">tr</span>&gt;</div><div class="cm-line">&lt;/<span class="ͼ2i">table</span>&gt;</div><div class="cm-line"><br></div><div class="cm-line">&lt;/<span class="ͼ2i">body</span>&gt;</div><div class="cm-line">&lt;/<span class="ͼ2i">html</span>&gt;</div><div class="cm-activeLine cm-line"><br></div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms; animation-name: cm-blink2;"><div class="cm-cursor cm-cursor-primary" style="left: 42.3828px; top: 1795.86px; height: 18.75px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"><div class="cm-selectionBackground" style="left: 42.3828px; top: 3.97438px; width: 889.367px; height: 20.01px;"></div><div class="cm-selectionBackground" style="left: 42.3867px; top: 23.9744px; width: 889.363px; height: 1771.88px;"></div><div class="cm-selectionBackground" style="left: 42.3867px; top: 1795.85px; height: 18.76px;"></div></div></div></div></div></div></div><div class="reflex-splitter-console  reflex-splitter" style="height: 10px;"><img src="./three-dots.svg"></div><div class="editor horizontal reflex-element" style="flex: 0.139897 1 0%;"><div class="code-editor-identity"><p>CSS</p></div><div class="code-editor" id="code-editor" style="font-size: 16px;"><div class="cm-theme main-editor"><div class="cm-editor ͼ1 ͼ3 ͼ4 ͼj7 ͼ2b"><div aria-live="polite" style="position: absolute; top: -10000px;"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 254.211px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">99</div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 22.3828px;">2</div><div class="cm-gutterElement" style="height: 22.3828px;">3</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 22.3828px;">4</div><div class="cm-gutterElement" style="height: 22.3828px;">5</div><div class="cm-gutterElement" style="height: 22.3828px;">6</div><div class="cm-gutterElement" style="height: 22.3828px;">7</div><div class="cm-gutterElement" style="height: 22.3828px;">8</div><div class="cm-gutterElement" style="height: 22.3828px;">9</div><div class="cm-gutterElement" style="height: 22.3828px;">10</div><div class="cm-gutterElement" style="height: 22.3828px;">11</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 48.7656px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 22.3828px;"></div><div class="cm-gutterElement" style="height: 22.3828px; margin-top: 44.7656px;"><span title="Fold line">⌄</span></div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" class="cm-content" style="tab-size: 4;" role="textbox" aria-multiline="true" data-language="css" aria-autocomplete="list"><div class="cm-line"><br></div><div class="cm-line"><span class="ͼ2c">/* Your CSS Code here. */</span></div><div class="cm-line">  <span class="ͼ2i">table</span>, <span class="ͼ2i">th</span>, <span class="ͼ2i">td</span>  {</div><div class="cm-activeLine cm-line">    <span class="ͼ2h">border</span>: <span class="ͼ2j">1</span><span class="ͼ2d">px</span> <span class="ͼ2k">solid</span> <span class="ͼ2k">black</span>;</div><div class="cm-line">    <span class="ͼ2h">padding</span>: <span class="ͼ2j">8</span><span class="ͼ2d">px</span>;</div><div class="cm-line">  }</div><div class="cm-line">  .<span class="ͼ2j">black-cell</span> {</div><div class="cm-line">    <span class="ͼ2h">background-color</span>: <span class="ͼ2k">black</span>;</div><div class="cm-line">    <span class="ͼ2h">color</span>: <span class="ͼ2k">white</span>;</div><div class="cm-line">  }</div><div class="cm-line">  </div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms; animation-name: cm-blink2;"><div class="cm-cursor cm-cursor-primary" style="left: 304.062px; top: 72.3828px; height: 18.75px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></div></div><div class="reflex-splitter-console  reflex-splitter" style="height: 10px;"><img src="./three-dots.svg"></div><div class="editor horizontal reflex-element" style="flex: 0.114148 1 0%;"><div class="code-editor-identity"><p>Javascript</p></div><div class="code-editor" id="code-editor" style="font-size: 16px;"><div class="cm-theme main-editor"><div class="cm-editor ͼ1 ͼ3 ͼ4 ͼj9 ͼ2b"><div aria-live="polite" style="position: absolute; top: -10000px;"><div>Selection deleted</div></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 30.3828px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">9</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 22.3828px; margin-top: 4px;">1</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 22.3828px; margin-top: 4px;"></div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" class="cm-content" style="tab-size: 4;" role="textbox" aria-multiline="true" data-language="javascript" aria-autocomplete="list"><div class="cm-activeLine cm-line"><br></div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms; animation-name: cm-blink;"><div class="cm-cursor cm-cursor-primary" style="left: 36.7969px; top: 5.23438px; height: 18.75px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></div></div></div></div></div></div><div class="reflex-splitter" style="width: 10px;"><img src="./three-dots-vertical.svg"></div><div class="left-pane vertical reflex-element" style="flex: 0.5 1 0%;"><div class="left-panel MuiBox-root css-8atqhb"><div class="tabs-box MuiBox-root css-1gsv261"><div class="MuiTabs-root tab-labels css-orq8zk"><div class="MuiTabs-scrollableX MuiTabs-hideScrollbar css-oqr85h" style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"></div><div class="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX css-12qnib" style="margin-bottom: 0px;"><div aria-label="basic tabs example" class="MuiTabs-flexContainer css-k008qs" role="tablist"><button class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1q2h7u5" tabindex="-1" type="button" role="tab" aria-selected="false" id="simple-tab-0" aria-controls="simple-tabpanel-0">Question<span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1q2h7u5" tabindex="-1" type="button" role="tab" aria-selected="false" id="simple-tab-1" aria-controls="simple-tabpanel-1">Submission<span class="MuiTouchRipple-root css-w0pj6f"></span></button><button class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1q2h7u5" tabindex="0" type="button" role="tab" aria-selected="true" id="simple-tab-2" aria-controls="simple-tabpanel-2">Preview<span class="MuiTouchRipple-root css-w0pj6f"></span></button></div><span class="MuiTabs-indicator css-ttwr4n" style="left: 232.227px; width: 99.375px;"></span></div></div></div><div role="tabpanel" id="simple-tabpanel-0" aria-labelledby="simple-tab-0" class="tab-panel" hidden=""><div class="question-panel"><ul class="question-meta-info-list"><li class="difficulty-item"><p class="question-difficulty" style="color: rgb(18, 183, 106); background-color: rgb(227, 255, 237);"> <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> EASY</p></li><li class="max-score"><p><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>Max Score: 20 Points</p></li></ul><div class="markdown-body">
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in Tables</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+
+
+    <h1>Tables in Tables</h1>
+    <p>Your task is to create an HTML table layout with multiple nested tables and lists that closely resemble the structure shown in the image:</p>
+    <img src="./Screenshot 2023-01-31 at 2.42.55 PM.png" alt="Tables in Tables">
+    <p>Here are the requirements:</p>
+    <table><tbody><tr><th>Requirement</th><th>Description</th></tr><tr><td>Nested Tables</td><td>Create 4 nested tables within a main table. Follow the image for layout.</td></tr><tr><td>Headers</td><td>Each nested table should have specific headers. For example, one table should have "Nested Table 2," "Column 1," "Column 2" as headers.</td></tr><tr><td>Lists</td><td>Include a list in one of the tables with the items "List item 1," "List item 2," "List item 3."</td></tr><tr><td>Background Color</td><td>One of the cells in the nested tables should have a black background with white text that contains "HTML."</td></tr></tbody></table>
+    <p>Ensure that your HTML code closely follows the structure in the image, and submit your completed work for evaluation.</p>
+
+</div><div class="tags-list-div"><h4>Topic Tags <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"></path></svg></h4></div></div></div><div role="tabpanel" hidden="" id="simple-tabpanel-1" aria-labelledby="simple-tab-1" class="tab-panel"><div class="sc-bcXHqe bwIrqS"><div class="submission"><h1>Your Submission</h1><div class="no-submission"><p>You have to submit the code get submission result</p></div></div></div></div><div role="tabpanel" id="simple-tabpanel-2" aria-labelledby="simple-tab-2" class="tab-panel"><div class="preview-panel"><iframe title="demo" src="./saved_resource(1).html"><p>Your browser does not support iframes.</p></iframe></div></div></div><button class="submit-code-btn ">Submit</button><button class="submit-code-btn ">Save</button></div></div><div class="Toastify"></div></div></div></div></div></body></html>

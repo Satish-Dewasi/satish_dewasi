@@ -4,21 +4,14 @@
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
+    transition: all ease-in-out 0.5s;
+    
 }
 
 html{
     font-size: 62.5%;
 }
 
-/* body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #e5f0ff !important;
-    /* gap: 3rem; 
-    
-} */
 
 body.light-theme {
     /* background-color: #ffffff; */
@@ -38,17 +31,10 @@ body.dark-theme {
 }
 
 
-
-
-
-
-
-
-
-nav{
+nav {
     width: 100%;
     height: 10vh;
-    /* background-color: lightgrey; */
+    /* background-color: lightgrey;  */
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -58,13 +44,7 @@ nav{
 }
 
 
-.mobile-bar{
-   width: 20%;
-   height: 10vh;
-   display: none;
-}
-
-.logo{
+.logo {
     width: 10%;
     height: 10vh;
     /* background-color: blueviolet; */
@@ -83,13 +63,19 @@ nav{
 .tabs {
     width: 40%;
     height: 10vh;
-    /* background-color: red; */
+    z-index: 9999;
     display: flex;
+    /* color: white; */
     align-items: center;
     justify-content: space-evenly;
 }
 
-.tabs-items{
+.tabs a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.tabs-items {
     font-size: 2rem;
     font-weight: 700;
     font-family: Rubik;
@@ -122,8 +108,8 @@ nav{
     cursor: pointer;
 }
 
-.toggle label .span2{
-   display: none;
+.toggle label .span2 {
+    display: none;
 }
 
 .toggle input:checked+label {
@@ -132,7 +118,7 @@ nav{
 
 }
 
-.toggle input:checked+label .span1{
+.toggle input:checked+label .span1 {
     display: none;
 }
 
@@ -140,41 +126,64 @@ nav{
     display: block;
 }
 
-
-
-@media screen and (max-width:600px) {
-
-    nav {
-        height: 6vh;
-    }
+#check {
+    display: none;
 }
 
-@media screen and (max-width:850px){
-    
+.bar {
+    display: none;
+}
 
-    .tabs{
-        display: none;
+
+@media screen and (max-width:800px) {
+
+    .tabs {
+        position: absolute;
+        background-color: #245894;
+        /* color: white; */
+        top: 6rem;
+        left: 0;
+        width: 50%;
+        height: 50vh;
+        flex-direction: column;
+        transition: inherit
+        
+
     }
 
     .space {
         display: none;
     }
 
-    .mobile-bar{
+    .bar {
+        cursor: pointer;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        /* justify-content: space-around; */
     }
 
-    .logo{
+    nav {
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between !important;
+        padding-inline: 2%;
+        padding-left: 3%;
+
+    }
+
+    .logo {
         width: 40%;
+        height: 6rem;
     }
 
-    .bton{
+    .bton {
         width: 20%;
-        
     }
-    
+}
+
+#check:checked~.tabs {
+    margin-left: -100%;
 }
 
 

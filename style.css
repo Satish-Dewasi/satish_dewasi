@@ -127,7 +127,7 @@ nav {
 }
 
 #check {
-    display: none;
+    display: block;
 }
 
 .bar {
@@ -141,6 +141,7 @@ nav {
         position: absolute;
         background-color: #245894;
         /* color: white; */
+        margin-left: -100%;
         top: 6rem;
         left: 0;
         width: 50%;
@@ -183,7 +184,7 @@ nav {
 }
 
 #check:checked~.tabs {
-    margin-left: -100%;
+    margin-left: 0;
 }
 
 
